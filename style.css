@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 100vh; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    width: 100%;
+    color: #666;
+}
+
+
+/* Media queries */
+@media (max-width: 320px) {
+    form {
+        width: 220px; 
+    }
+
+    h2 {
+        font-size: 18px; 
+    }
+
+    input[type="text"], button {
+        font-size: 14px; 
+    }
+
+    footer {
+        font-size: 12px; 
+        padding: 15px 0;
+    }
+}
+
+/* Stylizacja inputa typu file */
+#fileInput {
+    font-size: 14px;  /* Zwiększenie czcionki */
+    padding: 10px;    /* Dodanie przestrzeni wewnętrznej */
+    background-color: #f8f9fa; /* Jasne tło */
+    color: #333;      /* Kolor tekstu */
+    border: 2px solid #007bff; /* Niebieska ramka */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    cursor: pointer;  /* Zmiana kursora na wskaźnik */
+    transition: all 0.3s ease; /* Płynne przejście przy interakcji */
+}
+
+/* Zmiany przy najechaniu */
+#fileInput:hover {
+    border-color: #0056b3; /* Zmiana koloru ramki na ciemniejszy niebieski */
+    background-color: #e2e6ea; /* Jasne podświetlenie tła */
+}
+
+/* Zmiany przy kliknięciu */
+#fileInput:active {
+    background-color: #cbd3d8; /* Mroczniejsze tło podczas kliknięcia */
+}
