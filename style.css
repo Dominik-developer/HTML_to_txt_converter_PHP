@@ -90,7 +90,7 @@ footer {
     }
 }
 
-/* Stylizacja inputa typu file */
+
 #fileInput {
     font-size: 14px;  /* Zwiększenie czcionki */
     padding: 10px;    /* Dodanie przestrzeni wewnętrznej */
@@ -102,13 +102,71 @@ footer {
     transition: all 0.3s ease; /* Płynne przejście przy interakcji */
 }
 
-/* Zmiany przy najechaniu */
 #fileInput:hover {
     border-color: #0056b3; /* Zmiana koloru ramki na ciemniejszy niebieski */
     background-color: #e2e6ea; /* Jasne podświetlenie tła */
 }
 
-/* Zmiany przy kliknięciu */
 #fileInput:active {
     background-color: #cbd3d8; /* Mroczniejsze tło podczas kliknięcia */
+}
+
+
+
+/* Code container */
+.code-container {
+    display: flex;
+    font-family: monospace;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 400px;
+    width: 100%;
+    margin: 20px auto;
+    overflow: auto;
+    color: #333;
+    max-width: 500px;
+}
+
+/* Line numbers */
+.line-numbers {
+    text-align: right;
+    color: #666;
+    padding-right: 10px;
+    border-right: 1px solid #007bff;
+    margin-right: 10px;
+    flex-shrink: 0; /* Zapobiega zmniejszaniu szerokości */
+    font-size: 14px;
+    line-height: 1.5; /* Dopasowanie odstępu między liniami */
+    width: 20px; /* Szerokość kolumny numerów (40px) */
+    text-align: center; /* albo bez tego */
+}
+
+.line-numbers div {
+    line-height: 1.5; 
+}
+
+/* Code output */
+.code-output {
+    flex-grow: 1;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5; /* Ustala odstęp między liniami w kodzie */
+}
+
+.code-output code {
+    display: block; /* Upewnia się, że każda linia zaczyna się od nowej linii */
+}
+
+pre {
+    white-space: pre-wrap;  /* Zapewnia, że długie linie będą zawijane */
+    word-wrap: break-word;  /* Zawijanie słów, jeśli są za długie */
+    margin: 0;  /* Usuwa marginesy */
+    padding: 0;  /* Usuwa padding */
+    text-align: left;  /* Ustawia wyrównanie tekstu do lewej */
 }
